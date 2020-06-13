@@ -36,7 +36,7 @@
 						<li><a class="active" href="index.html">work</a></li>
 						<li><a href="about.html">about</a></li>
 						<li><a href="assets/daniel_resume.pdf" target="_blank">resume</a></li>
-						<li><a href="art.html">art</a></li>
+						<!--<li><a href="art.html">art</a></li>-->
 					</ul>
 				</div>
 
@@ -49,7 +49,14 @@
 
 			</div>
 		</header>
-
+				<!-- Menu -->
+				<nav id="menu">
+					<ul>
+						<li><a class="active" href="index.html">work</a></li>
+						<li><a href="about.html">about</a></li>
+						<li><a href="assets/daniel_resume.pdf" target="_blank">resume</a></li>
+					</ul>	
+				</nav>
 
 		<!-- Main -->
 		<div id="main">
@@ -57,8 +64,13 @@
 				<header>
 					<header>
 						<link href="https://fonts.googleapis.com/css?family=Chivo" rel="stylesheet" />
-						<h1>Hi! I'm Daniel, a computer science student @ UW - Madison
-						</h1>
+						
+						<div>
+							<h1>
+								<span id="typing"></span>
+							</h1>
+						</div>
+						
 						<ul class="icons">
 							<li><a href="https://www.linkedin.com/in/daniel-ko1"
 									class="icon brands style2 fa-linkedin"><span class="label">LinkedIn</span></a></li>
@@ -69,19 +81,46 @@
 						</ul>
 					</header>
 					
-					<!-- Tiles 
+					<!-- Tiles -->
 					<section class="tiles">
-						<article class="style1">
+
+						<article class="style3">
 							<span class="image">
-								<img src="images/pic01.jpg" alt="" />
+								<img src="images/pic03.jpg" alt="" />
 							</span>
-							<a href="generic.html">
-								<h2>Magna</h2>
+							<a href="https://ko28melonapi.herokuapp.com">
+								<h2>Melon API</h2>
 								<div class="content">
-									<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
+									<p>A small API for 멜론 (Melon) 🍈, a Korean music chart.</p>
 								</div>
 							</a>
 						</article>
+
+						<article class="style1">
+							<span class="image">
+								<img src="images/pic03.jpg" alt="" />
+							</span>
+							<a href="https://github.com/ko28/airpods-floss-classifier">
+								<h2>Airpods-Floss Classifier</h2>
+								<div class="content">
+									<p>Image classification using a convolutional neural network.</p>
+								</div>
+							</a>
+						</article>
+						
+						<article class="style2">
+							<span class="image">
+								<img src="images/pic03.jpg" alt="" />
+							</span>
+							<a href="https://github.com/hdko/NASAStudentLaunchTelemetry2019">
+								<h2>Telemetry Dashboard</h2>
+								<div class="content">
+									<p>Telemetry software for NASA Student Launch Initiative 2018-19.</p>
+								</div>
+							</a>
+						</article>
+					</section>
+					<!-- 
 						<article class="style2">
 							<span class="image">
 								<img src="images/pic02.jpg" alt="" />
@@ -268,6 +307,14 @@
 	<script src="assets/js/breakpoints.min.js"></script>
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
+	<script src="assets/js/typeit.min.js"></script>
+	<script>
+		new TypeIt("#typing", {
+		strings: ["Hi! I'm Daniel, a computer science student @ UW - Madison."],
+		speed: 50,
+		waitUntilVisible: true
+		}).go();
+	</script>
 
 </body>
 

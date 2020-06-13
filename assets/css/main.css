@@ -1,7 +1,7 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700,900");
-@import url('https://fonts.googleapis.com/css?family=Proxima+Nova');
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Proxima+Nova");
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
 
 html,
 body,
@@ -206,11 +206,11 @@ body,
 input,
 select,
 textarea {
-  color: #585858;
-  font-family: "Source Sans Pro", Helvetica, sans-serif;
-  font-size: 16pt;
-  font-weight: 300;
-  line-height: 1.75;
+  color: #333;
+  font-family: "Chivo", sans-serif;
+  font-size: 14pt;
+  font-weight: 50;
+  line-height: 1.42857143;
 }
 
 @media screen and (max-width: 1680px) {
@@ -2671,7 +2671,7 @@ button:disabled,
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  postiion: relative;
+  position: relative;
   margin: -2.5em 0 0 -2.5em;
 }
 
@@ -2916,7 +2916,6 @@ body.is-touch .tiles article .content {
     margin: 1.25em 0 0 0;
   }
 }
-
 /* Header */
 
 #header {
@@ -3255,10 +3254,10 @@ body.is-menu-visible #menu .close {
 /* Footer */
 
 #footer {
-	position:absolute;
-   bottom:0;
-   width:100%;
-   height:60px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
   padding: 5em 0 6em 0;
 }
 
@@ -3311,7 +3310,6 @@ body.is-menu-visible #menu .close {
   padding: 0 0 0 1em;
   margin: 0 0 0 1em;
 }
-
 
 #footer > .inner .copyright li:first-child {
   border-left: 0;
@@ -3483,11 +3481,14 @@ body.is-menu-visible #menu .close {
 
 /* styling about page */
 div#main div.inner h1 a {
-  text-align: center;
-  margin: 2em 0 2em 0;
-  font-size: 14px;
-  border-bottom: none;
-  font-weight: 300;
+  font-family: "Proxima Nova", "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 15px;
+  line-height: 1.3em;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #333;
 }
 
 div#main div.inner h1 {
@@ -3540,10 +3541,10 @@ div.row {
 }
 
 div#main div.inner p {
-  font-family: "Proxima Nova", sans-serif, "Roboto", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 17px;
+  margin-top: 0.5em;
   line-height: 1.7em;
   letter-spacing: 0.05em;
   text-rendering: optimizeLegibility;
@@ -3575,37 +3576,5 @@ div#main div.inner h1 a {
   font-size: 15px;
   line-height: 1.3em;
   letter-spacing: 0.15em;
-  text-transform: uppercase;
   color: #333;
-}
-
-div.content {
-  content: "";
-  clear: both;
-  display: table;
-  padding: 0 1.5em 1.5em 1.5em;
-  max-width: 100%;
-}
-
-/* styling ux lab and launchpad page */
-div#main div.inner ol ul li a {
-  border-bottom: none;
-  color: #ef9292;
-}
-
-.inner span.image img.centerimguxlab {
-  width: 100%;
-  display: block;
-  margin-left: 4em;
-  margin-right: auto;
-}
-
-/*videos */
-
-iframe {
-  display: block;
-  min-width: 100%;
-  min-height: 100%;
-  margin: 0;
-  width: 80vw;
 }
